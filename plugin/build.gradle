@@ -23,7 +23,7 @@ repositories {
 }
 
 group='com.uty3714.blackobfuscator'
-version='1.0.2'
+version='1.0.1'
 //uploadArchives {
 //    repositories {
 //        mavenDeployer {
