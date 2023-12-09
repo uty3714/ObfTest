@@ -1,0 +1,38 @@
+apply plugin: 'groovy'
+//apply plugin: 'maven'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.uty3714.blackobfuscator'
+dependencies {
+    implementation "com.android.tools.build:gradle:3.3.1"
+    implementation "com.android.tools.build:transform-api:1.5.0"
+    implementation "commons-io:commons-io:2.5"
+    //gradle sdk
+    implementation gradleApi()
+    //groovy sdk
+    implementation localGroovy()
+    //implementation "com.github.CodingGay.BlackObfuscator:dex-tools:2.2"
+    implementation 'com.github.uty3714.BlackObfuscatorJ2d:dex-tools:1.0.1'
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url uri('localRepo')
+    }
+}
+
+group='com.uty3714.blackobfuscator'
+version='1.0.2'
+//uploadArchives {
+//    repositories {
+//        mavenDeployer {
+//            //提交到远程服务器：
+//            // repository(url: "http://www.xxx.com/repos") {
+//            //    authentication(userName: "admin", password: "admin")
+//            // }
+//            //本地的Maven地址设置为E:/Maven
+//            repository(url: uri('../localRepo'))
+//        }
+//    }
+//}
