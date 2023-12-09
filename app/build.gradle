@@ -1,6 +1,5 @@
 plugins {
     id 'com.android.application'
-//    id 'top.niunaijun.blackobfuscator'
     id 'com.uty3714.blackobfuscator'
 }
 
