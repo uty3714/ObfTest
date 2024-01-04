@@ -11,7 +11,7 @@ dependencies {
     implementation gradleApi()
     //groovy sdk
     implementation localGroovy()
-    implementation 'com.github.uty3714.BlackObfuscatorJ2d:dex-tools:1.0.2'
+    implementation 'com.github.uty3714.BlackObfuscatorJ2d:dex-tools:1.0.3'
 }
 
 repositories {
@@ -22,7 +22,7 @@ repositories {
 }
 
 group='com.uty3714.blackobfuscator'
-version='1.0.2'
+version='1.0.3'
 //uploadArchives {
 //    repositories {
 //        mavenDeployer {
