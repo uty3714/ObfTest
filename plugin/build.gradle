@@ -1,6 +1,6 @@
 apply plugin: 'groovy'
-//apply plugin: 'maven'
-apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'maven'
+//apply plugin: 'com.github.dcendents.android-maven'
 
 group='com.uty3714.blackobfuscator'
 dependencies {
@@ -23,15 +23,16 @@ repositories {
 
 group='com.uty3714.blackobfuscator'
 version='1.0.3'
-//uploadArchives {
-//    repositories {
-//        mavenDeployer {
-//            //提交到远程服务器：
-//            // repository(url: "http://www.xxx.com/repos") {
-//            //    authentication(userName: "admin", password: "admin")
-//            // }
-//            //本地的Maven地址设置为E:/Maven
-//            repository(url: uri('../localRepo'))
-//        }
-//    }
-//}
+//打开 maven注释, 注释掉 com.github.dcendents.android-maven
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            //提交到远程服务器：
+            // repository(url: "http://www.xxx.com/repos") {
+            //    authentication(userName: "admin", password: "admin")
+            // }
+            //本地的Maven地址设置为E:/Maven
+            repository(url: uri('../localRepo'))
+        }
+    }
+}
